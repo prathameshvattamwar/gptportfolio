@@ -12,6 +12,100 @@ body {
     box-sizing: border-box;
 }
 
+.forms{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup,
+.loginForm{
+    transition: all ease .5s;
+}
+
+.loginForm, .signup{
+    position: absolute;
+    width: 300px;
+    min-height: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    left: 40%;
+    top: 20%;
+    scale: 0;
+}
+
+.lclose{
+    width: fit-content;
+    float: right;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.sclose{
+    width: fit-content;
+    float: right;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+form{
+    p{
+        font-size: 12px;
+        span{
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
 a{
     text-decoration: none;
 }
@@ -51,6 +145,7 @@ header {
     background-color: #555;
     color: #fff;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .auth-buttons button:hover {
