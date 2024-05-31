@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper">
+        <div class="loginForm" id="logincreate">
+            <div class="lclose">x</div>
+            <h1>Login Form</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <span class="signhere">signup here</span></p>
+            </form>
+        </div>
+        <div class="signup" id="signupcreate">
+            <div class="sclose">x</div>
+            <h1>Signup Form</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="username">Email:</label>
+                <input type="email" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign up</button>
+                <p>Already have an account? <span class="loghere">login here</span></p>
+            </form>
+        </div>
+    <div class="wrapper" >
         <header>
             <nav class="navbar">
                 <div class="logo">Prathamesh</div>
@@ -18,8 +44,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="auth-buttons">
-                    <button>Login</button>
-                    <button>Signup</button>
+                    <button class="log">Login</button>
+                    <button class="sign">Signup</button>
                 </div>
                 <i class="fa-solid fa-bars menu"></i>
             </nav>
@@ -81,5 +107,6 @@
 
 
     <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
